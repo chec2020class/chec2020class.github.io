@@ -22,20 +22,36 @@
 
 
     <title>CHEC Cloud Talk Series</title>
+
+    <script>
+        function Jump(i) {
+            var cur = document.getElementById(i);
+            getPosition(cur);
+        }
+
+        function getPosition(e) {
+            var t = e.offsetTop;
+            var l = e.offsetLeft;
+            while (e = e.offsetParent) {
+                t += e.offsetTop;
+                l += e.offsetLeft;
+            }
+            $("html,body").animate({
+                scrollTop: t
+            }, 300);
+        }
+    </script>
+
 </head>
 
 <body id="bodytop" class="mdbootstrap" data-target="#list-left" data-spy="scroll" data-offset="100">
     <header id="iwhecheader" class="clearfix navbar navbar-dark navbar-expand-lg flex-column flex-md-row fixed-top"
-        style="background-color: #fff;">
+        style="background-color: rgb(64, 64, 64);">
         
         <a class="navbar-brand" style="margin: 0 auto;" href="#">
            
-            <span style="color:black; font-size: 3;"> CHEC Cloud Talk Series </span>
+            <span style="color:white; font-size: 4;"> CHEC Cloud Talk Series </span>
         </a>
-        
-        
-
-        
         <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
             aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -44,8 +60,6 @@
     </header>
       <!--
    -->
-
-
   
     <div class="container-fluid" style="padding-left:0;">
         <div class="jumbotron-top" id="intro">
@@ -57,63 +71,63 @@
                         <div class="speaker-box">
                             <div class="row marketing">
                                 <div class="speaker col-lg-3 text-center">
-                                    <img src="assets/images/live4/sumi070520.jpg" alt="" class="rounded-circle speaker-avatar">
+                                    <img src="assets/images/live4/sumi070520.jpg" alt="" class="rounded-circle speaker-avatar" onclick="Jump('i001')">
                                     <a href="https://www.fun.ac.jp/~sumi/" target="_blank">
                                         <h4 style="padding-top:15px;">Yasuyuki Sumi</h4>
                                     </a>
                                     <strong>Professor, Future University Hakodate</strong>
                                 </div>
                                 <div class="speaker col-lg-3 text-center">
-                                    <img src="assets/images/live4/Huawei Tu.png" alt="" class="rounded-circle speaker-avatar">
+                                    <img src="assets/images/live4/Huawei Tu.png" alt="" class="rounded-circle speaker-avatar" onclick="Jump('i002')">
                                     <a href="#" target="_blank">
                                         <h4 style="padding-top:15px;">Huawei Tu</h4>
                                     </a>
                                     <strong>Assistant Professor, La Trobe University, Australia</strong>
                                 </div>
                                 <div class="speaker col-lg-3 text-center">
-                                    <img src="assets/images/live4/Shin'ichi Fukuzumi.png" alt="" class="rounded-circle speaker-avatar">
+                                    <img src="assets/images/live4/Shin'ichi Fukuzumi.png" alt="" class="rounded-circle speaker-avatar" onclick="Jump('i003')">
                                     <a href="#" target="_blank">
                                         <h4 style="padding-top:15px;">Shin'ichi Fukuzumi</h4>
                                     </a>
                                     <strong>Doctor, Graduted Keio University</strong>
                                 </div>
                                 <div class="speaker col-lg-3 text-center">
-                                    <img src="assets/images/live4/Nao.png" alt="" class="rounded-circle speaker-avatar">
+                                    <img src="assets/images/live4/Nao.png" alt="" class="rounded-circle speaker-avatar" onclick="Jump('i004')">
                                     <a href="http://naomi-yamashita.net/cv/" target="_blank">
                                         <h4 style="padding-top:15px;">Naomi Yamashita</h4>
                                     </a>
                                     <strong>Primary researcher at NTT Communication Science Laboratories</strong>
                                 </div>
                                 <div class="speaker col-lg-3 text-center">
-                                    <img src="assets/images/live4/Sayan Sarcar.png" alt="" class="rounded-circle speaker-avatar">
+                                    <img src="assets/images/live4/Sayan Sarcar.png" alt="" class="rounded-circle speaker-avatar" onclick="Jump('i005')">
                                     <a href="#" target="_blank">
                                         <h4 style="padding-top:15px;">Sayan Sarcar</h4>
                                     </a>
                                     <strong>Assistant professor, University of Tsukuba</strong>
                                 </div>
                                 <div class="speaker col-lg-3 text-center">
-                                    <img src="assets/images/live4/Miwako.jpg" alt="" class="rounded-circle speaker-avatar">
+                                    <img src="assets/images/live4/Miwako.jpg" alt="" class="rounded-circle speaker-avatar" onclick="Jump('i006')">
                                     <a href="https://www.ieice.org/eng/about_ieice/new_honorary_members_award_winners/2018/meiyo_03e.html" target="_blank">
                                         <h4 style="padding-top:15px;">Miwako</h4>
                                     </a>
                                     <strong>Professor, Information Science, Graduate School, Osaka University</strong>
                                 </div>
                                 <div class="speaker col-lg-3 text-center">
-                                    <img src="assets/images/live4/kurosu_5745.jpg" alt="" class="rounded-circle speaker-avatar">
+                                    <img src="assets/images/live4/kurosu_5745.jpg" alt="" class="rounded-circle speaker-avatar"onclick="Jump('i007')">
                                     <a href="http://user-engineering.net/masaaki/index.html" target="_blank">
                                         <h4 style="padding-top:15px;">Masaaki Kurosu</h4>
                                     </a>
                                     <strong>Professor, Open University of Japan, President of HCD-Net (Human Centered Design Network), Japan</strong>
                                 </div>
                                 <div class="speaker col-lg-3 text-center">
-                                    <img src="assets/images/live4/Kentaro Go.jpg" alt="" class="rounded-circle speaker-avatar">
+                                    <img src="assets/images/live4/Kentaro Go.jpg" alt="" class="rounded-circle speaker-avatar" onclick="Jump('i008')">
                                     <a href="#" target="_blank">
                                         <h4 style="padding-top:15px;">Kentaro Go</h4>
                                     </a>
                                     <strong>Professor, department head at the Computer Science and Engineering Department, University of Yamanashi, Japan</strong>
                                 </div>
                                 <div class="speaker col-lg-3 text-center">
-                                    <img src="assets/images/live4/Kazushi.jpg" alt="" class="rounded-circle speaker-avatar">
+                                    <img src="assets/images/live4/Kazushi.jpg" alt="" class="rounded-circle speaker-avatar" onclick="Jump('i009')">
                                     <a href="http://www.jaist.ac.jp/ks/labs/knishi/" target="_blank">
                                         <h4 style="padding-top:15px;">Kazushi Nishimoto</h4>
                                     </a>
@@ -122,7 +136,7 @@
                                         Japan Advanced Institute of Science and Technology, Hokuriku</strong>
                                 </div>
                                 <div class="speaker col-lg-3 text-center">
-                                    <img src="assets/images/live4/Norikami.png" alt="" class="rounded-circle speaker-avatar">
+                                    <img src="assets/images/live4/Norikami.png" alt="" class="rounded-circle speaker-avatar" onclick="Jump('i010')">
                                     <a href="https://www.musashino-u.ac.jp/guide/facility/MUSIC.html" target="_blank">
                                         <h4 style="padding-top:15px;">Norikami Kamibayashi</h4>
                                     </a>
@@ -130,21 +144,21 @@
                                         （MUSIC）</strong>
                                 </div>
                                 <div class="speaker col-lg-3 text-center">
-                                    <img src="assets/images/live4/Tatsuo Arai.png" alt="" class="rounded-circle speaker-avatar">
+                                    <img src="assets/images/live4/Tatsuo Arai.png" alt="" class="rounded-circle speaker-avatar" onclick="Jump('i011')">
                                     <a href="https://jglobal.jst.go.jp/detail?JGLOBAL_ID=200901064117863685" target="_blank">
                                         <h4 style="padding-top:15px;">Tatsuo Arai</h4>
                                     </a>
                                     <strong>Professor, Department of Systems Science, Graduate School of Engineering Science, Osaka University</strong>
                                 </div>
                                 <div class="speaker col-lg-3 text-center">
-                                    <img src="assets/images/live4/Kaechang Park.png" alt="" class="rounded-circle speaker-avatar">
+                                    <img src="assets/images/live4/Kaechang Park.png" alt="" class="rounded-circle speaker-avatar" onclick="Jump('i012')">
                                     <a href="#" target="_blank">
                                         <h4 style="padding-top:15px;">Kaechang Park</h4>
                                     </a>
                                     <strong>Professor,Regional Cooperation Organization, Japan</strong>
                                 </div>
                                 <div class="speaker col-lg-3 text-center">
-                                    <img src="assets/images/live4/Kim.png" alt="" class="rounded-circle speaker-avatar">
+                                    <img src="assets/images/live4/Kim.png" alt="" class="rounded-circle speaker-avatar" onclick="Jump('i013')">
                                     <a href="#" target="_blank">
                                         <h4 style="padding-top:15px;">Kibum Kim</h4>
                                     </a>
@@ -170,7 +184,7 @@
                             <h2>Speakers</h2>
                             <hr />
                             <div class="speaker-box">
-                                <div class="row marketing">
+                                <div class="row marketing" id="i001">
                                     <div class="speaker col-lg-2 text-center">
                                         <img src="assets/images/live4/sumi070520.jpg" alt="" class="rounded-circle speaker-avatar">
                                         
@@ -199,7 +213,7 @@
                                     <div class="clearfix"></div>
                                 </div>
                                 <hr>
-                                <div class="row marketing">
+                                <div class="row marketing" id="i002">
                                     <div class="speaker col-lg-2 text-center">
                                         <img src="assets/images/live4/Huawei Tu.png" alt="" class="rounded-circle speaker-avatar">
                                         <a href="#"
@@ -226,7 +240,7 @@
                                     <div class="clearfix"></div>
                                 </div>
                                 <hr>
-                                <div class="row marketing">
+                                <div class="row marketing" id="i003">
                                     <div class="speaker col-lg-2 text-center">
                                         <img src="assets/images/live4/Shin'ichi Fukuzumi.png" alt="" class="rounded-circle speaker-avatar">
                                         <a href="#" target="_blank">
@@ -249,7 +263,7 @@
                                     <div class="clearfix"></div>
                                 </div>
                                 <hr>
-                                <div class="row marketing">
+                                <div class="row marketing" id="i004">
                                     <div class="speaker col-lg-2 text-center">
                                         <img src="assets/images/live4/Nao.png" alt="" class="rounded-circle speaker-avatar">
                                         <a href="http://naomi-yamashita.net/cv/"
@@ -276,7 +290,7 @@
                                     <div class="clearfix"></div>
                                 </div>
                                 <hr>
-                                <div class="row marketing">
+                                <div class="row marketing" id="i005">
                                     <div class="speaker col-lg-2 text-center">
                                         <img src="assets/images/live4/Sayan Sarcar.png" alt="" class="rounded-circle speaker-avatar">
                                         <a href="#"
@@ -299,7 +313,7 @@
                                     <div class="clearfix"></div>
                                 </div>
                                 <hr>
-                                <div class="row marketing">
+                                <div class="row marketing" id="i006">
                                     <div class="speaker col-lg-2 text-center">
                                         <img src="assets/images/live4/Miwako.jpg" alt="" class="rounded-circle speaker-avatar">
                                         <a href="https://www.ieice.org/eng/about_ieice/new_honorary_members_award_winners/2018/meiyo_03e.html"
@@ -327,7 +341,7 @@
                                     <div class="clearfix"></div>
                                 </div>
                                 <hr>                             
-                                <div class="row marketing">
+                                <div class="row marketing" id="i007">
                                     <div class="speaker col-lg-2 text-center">
                                         <img src="assets/images/live4/kurosu_5745.jpg" alt="" class="rounded-circle speaker-avatar">
                                         <a href="http://user-engineering.net/masaaki/index.html"
@@ -361,7 +375,7 @@
                                     <div class="clearfix"></div>
                                 </div>
                                 <hr>
-                                <div class="row marketing">
+                                <div class="row marketing" id="i008">
                                     <div class="speaker col-lg-2 text-center">
                                         <img src="assets/images/live4/Kentaro Go.jpg" alt="" class="rounded-circle speaker-avatar">
                                         <a href="##"
@@ -386,7 +400,7 @@
                                     <div class="clearfix"></div>
                                 </div>
                                 <hr>
-                                <div class="row marketing">
+                                <div class="row marketing" id="i009">
                                     <div class="speaker col-lg-2 text-center">
                                         <img src="assets/images/live4/Kazushi.jpg" alt="" class="rounded-circle speaker-avatar">
                                         <a href="http://www.jaist.ac.jp/ks/labs/knishi/"
@@ -414,7 +428,7 @@
                                     <div class="clearfix"></div>
                                 </div>
                                 <hr>
-                                <div class="row marketing">
+                                <div class="row marketing" id="i010">
                                     <div class="speaker col-lg-2 text-center">
                                         <img src="assets/images/live4/Norikami.png" alt="" class="rounded-circle speaker-avatar">
                                         <a href="https://www.musashino-u.ac.jp/guide/facility/MUSIC.html"
@@ -443,7 +457,7 @@
                                     <div class="clearfix"></div>
                                 </div>
                                 <hr>
-                                <div class="row marketing">
+                                <div class="row marketing" id="i011">
                                     <div class="speaker col-lg-2 text-center">
                                         <img src="assets/images/live4/Tatsuo Arai.png" alt="" class="rounded-circle speaker-avatar">
                                         <a href="https://jglobal.jst.go.jp/detail?JGLOBAL_ID=200901064117863685"
@@ -468,7 +482,7 @@
                                     <div class="clearfix"></div>
                                 </div>
                                 <hr>
-                                <div class="row marketing">
+                                <div class="row marketing" id="i012">
                                     <div class="speaker col-lg-2 text-center">
                                         <img src="assets/images/live4/Kaechang Park.png" alt="" class="rounded-circle speaker-avatar">
                                         <a href="##"
@@ -536,7 +550,7 @@
                                     <div class="clearfix"></div>
                                 </div>
                                 <hr>
-                                <div class="row marketing">
+                                <div class="row marketing" id="i013">
                                     <div class="speaker col-lg-2 text-center">
                                         <img src="assets/images/live4/Kim.png" alt="" class="rounded-circle speaker-avatar">
                                         <a href="#"
